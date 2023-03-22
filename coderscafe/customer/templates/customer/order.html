@@ -90,45 +90,47 @@
                     {% endfor %}
                 </div>
 
-                <div class="form_group pt-3">
+                <div class="form-group pt-3">
                     <label for="name">Full Name</label>
-                    <input required class="form_control" type="text" placeholder="Your Name" name="name" />
+                    <input required class="form-control" type="text" placeholder="Your Name" name="Name" />
                 </div>
 
-                <div class="form_group pt-3">
+                <div class="form-group pt-3">
                     <label for="name">Email Address</label>
-                    <input required class="form_control" type="text" placeholder="example@company.com" name="email" />
+                    <input required class="form-control" type="text" placeholder="example@company.com" name="Email" />
                 </div>
 
-                <div class="form_group pt-3">
+                <div class="form-group pt-3">
                     <label for="name">Street Address</label>
-                    <input required class="form_control" type="text" placeholder="1234 Main St" name="Street" />
+                    <input required class="form-control" type="text" placeholder="1234 Main St" name="Street" />
                 </div>
                 <div class="row">
                     <div class="col-md-4 col-sm-12">
-                        <div class="form_group pt-3">
+                        <div class="form-group pt-3">
                             <label for="name">City</label>
-                            <input required class="form_control" type="text" placeholder="San Francisco" name="City" />
+                            <input required class="form-control" type="text" placeholder="San Francisco" name="City" />
                         </div>
                     </div>
 
                     <div class="col-md-4 col-sm-12">
-                        <div class="form_group pt-3">
+                        <div class="form-group pt-3">
                             <label for="name">State</label>
-                            <input required class="form_control" type="text" placeholder="CA" name="State" />
+                            <input required class="form-control" type="text" placeholder="CA" name="State" />
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12">
-                        <div class="form_group pt-3">
+                        <div class="form-group pt-3">
                             <label for="name">Zip Code</label>
-                            <input required class="form_control" type="text" placeholder="94117" name="Zip" />
+                            <input required class="form-control" type="text" placeholder="94117" name="Zip" />
                         </div>
                     </div>
                 </div>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#SubmitModal">
+
+                <button type="button" class="btn btn-dark mt-5" data-mdb-toggle="modal" data-mdb-target="#SubmitModal">
                     Submit Order!
                 </button>
+
                 <!-- <button class="btn btn-dark mt-5">place order</button> -->
 
                 <!-- Modal -->
@@ -138,13 +140,13 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="SubmitModalLabel">Submit Your Order!</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <button type="button" class="close" data-mdb-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-light" data-dismiss="modal">Go Back</button>
-                                <button type="submit" class="btn btn-dark">Pace Orde!</button>
+                                <button type="button" class="btn btn-light" data-mdb-dismiss="modal">Go Back</button>
+                                <button type="submit" class="btn btn-dark">Place Orde!</button>
                             </div>
                         </div>
                     </div>

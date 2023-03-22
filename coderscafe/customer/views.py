@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.views import View
+from django.core.mail import send_mail
 from .models import MenuItem, Category, OrderModel
 
 
@@ -34,12 +35,12 @@ class Order(View):
         return render(request, 'customer/order.html', context)
 
     def post(self, request, *args, **kwargs):
-        name = request.POST.get('name')
-        name = request.POST.get('email')
-        name = request.POST.get('street')
-        name = request.POST.get('city')
-        name = request.POST.get('state')
-        name = request.POST.get('zip_code')
+        name = request.POST.get('Name')
+        email = request.POST.get('Email')
+        street = request.POST.get('Street')
+        city = request.POST.get('City')
+        state = request.POST.get('State')
+        zip_code = request.POST.get('Zip')
 
         order_items = {
             'items': []
@@ -70,9 +71,22 @@ class Order(View):
             street=street,
             city=city,
             state=state,
-            zip_code=zip_code,
+            zip_code=zip_code
         )
         order.items.add(*item_ids)
+
+        # after everything is done, send confirmation email to the user
+        body = ('Thank You For your Order! Your Order Will Be Delivered Soon!\n'
+                f'Your total:{price}\n'
+                'Thank you again for your Order!')
+
+        send_mail(
+            'Thank You For Your Order!',
+            body,
+            'example@example.com',
+            [email],
+            fail_silently=False
+        )
 
         context = {
             'items': order_items['items'],
