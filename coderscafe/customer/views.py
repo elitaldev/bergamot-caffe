@@ -3,15 +3,15 @@ from django.views import View
 from .models import MenuItem, Category, OrderModel
 
 
-
 class Index(View):
-     def get(self, request, *args, **kwargs):
+    def get(self, request, *args, **kwargs):
         return render(request, 'customer/index.html')
 
 
 class About(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'customer/about.html')
+
 
 class Order(View):
     def get(self, request, *args, **kwargs):
@@ -22,7 +22,7 @@ class Order(View):
         desserts = MenuItem.objects.filter(category__name__contains='Dessert')
         drinks = MenuItem.objects.filter(category__name__contains='Drink')
 
-        #pass into context
+        # pass into context
         context = {
             'appetizers': appetizers,
             'entres': entres,
@@ -30,40 +30,53 @@ class Order(View):
             'drinks': drinks,
         }
 
-        #render the template
+        # render the template
         return render(request, 'customer/order.html', context)
 
     def post(self, request, *args, **kwargs):
+        name = request.POST.get('name')
+        name = request.POST.get('email')
+        name = request.POST.get('street')
+        name = request.POST.get('city')
+        name = request.POST.get('state')
+        name = request.POST.get('zip_code')
+
         order_items = {
-            'items':[]
+            'items': []
         }
         items = request.POST.getlist('items[]')
 
         for item in items:
             menu_item = MenuItem.objects.get(pk__contains=int(item))
             item_data = {
-                'id':menu_item.pk,
-                'name':menu_item.name,
-                'price':menu_item.price,
+                'id': menu_item.pk,
+                'name': menu_item.name,
+                'price': menu_item.price,
             }
 
             order_items['items'].append(item_data)
 
         price = 0
-        item_ids = []  
+        item_ids = []
 
         for item in order_items['items']:
             price += item['price']
             item_ids.append(item['id'])
 
-        order = OrderModel.objects.create(price=price)
+        order = OrderModel.objects.create(
+            price=price,
+            name=name,
+            email=email,
+            street=street,
+            city=city,
+            state=state,
+            zip_code=zip_code,
+        )
         order.items.add(*item_ids)
 
-
         context = {
-            'items': order.items['items'],
+            'items': order_items['items'],
             'price': price
         }
 
         return render(request, 'customer/order_confirmation.html', context)
-
