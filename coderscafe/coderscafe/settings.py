@@ -30,16 +30,32 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'allaouth.account.auth_backends.AuthenticationBackend',
+]
+
 INSTALLED_APPS = [
     'cafe',
     'customer',
+
+
+    'crispy_forms',
+    'crispy_bootstrap4',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sites',
     'django.contrib.staticfiles',
 ]
+
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -56,7 +72,7 @@ ROOT_URLCONF = 'coderscafe.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -126,7 +142,11 @@ MEDIA_URL = '/media/'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-# Default primary key field type
-# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
+ACCOUNT_ADAPTER = 'cafe.account_adapter.NoNewUsersAccountAdapter'
+LOGIN_REDIRECT_URL = 'dashboard'
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+LOGIN_URL = '/accounts/login/'
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
