@@ -5,7 +5,9 @@
     height: 100vh;
 }
 
-.h1 {
-    color: red;
-
+#about-background {
+    background: url('./aboutus.jpg') no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 400px;
 }
