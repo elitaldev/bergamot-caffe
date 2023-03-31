@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+
+.mytext_style {
+    font-family: 'Kurale', serif;
+    font-weight: 100;
+
+}
+
+
+.mytext_style1 {
+    font-family: 'Kurale', serif;
+    font-style: normal;
+}
+
 #front-page {
     background: url('./bergamot.jpg') no-repeat;
     background-size: cover;
@@ -5,12 +19,24 @@
     height: 100vh;
 }
 
+#logo {
+    background: url('./bergamotlogo.jpg');
+}
+
+.form-border {
+    border: 1px solid #c7c6c6;
+}
+
+
 #about-background {
-    background: url('./table.jpg') no-repeat;
+    background: url('./aboutus.jpg') no-repeat;
+
+    width: 100%;
+    height: 230px;
 
 
 }
 
-.text-menu {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.back-page {
+    background-color: antiquewhite;
 }

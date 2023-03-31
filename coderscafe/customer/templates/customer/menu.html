@@ -1,18 +1,18 @@
 {% extends 'customer/base.html' %}
 
 {% block content %}
-<div class="container">
+<div class="container mytext_style1">
     <div class="row justify-content-center mt-5">
         <div class="col-md-6 col-sm-12 text-center">
-            <h1>Bergamot Menu</h1>
+            <h1 class="mytext_style text-success">BERGAMOT MENU</h1>
         </div>
     </div>
     <div class="row justify-content-center my-5">
         <div class="col-md-8 col-sm-12 text-center">
             <form method="GET" action="{% url 'menu-search' %}">
                 <div class="md-form mt-0 active-cyan-2">
-                    <input class="form-control" name="q" type="text" placeholder="Search Our Menu" aria-label="Search"
-                        value="{{ request.GET.q }}">
+                    <input class="form-control form-border shadow" name="q" type="text" placeholder="Search Our Menu"
+                        aria-label="Search" value="{{ request.GET.q }}">
                 </div>
             </form>
         </div>

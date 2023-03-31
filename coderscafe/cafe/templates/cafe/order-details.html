@@ -1,7 +1,7 @@
 {% extends 'cafe/base.html' %}
 
 {% block content %}
-<div class="container">
+<div class="container mytext_style">
     <div class="row justify-content-center">
         <div class="col-md-6 col-sm-12 text-center mt-3">
             <h1>Order ID: {{ order.pk }}</h1>
@@ -39,10 +39,15 @@
             {% else %}
             <form method="POST">
                 {% csrf_token %}
-                <button type="submit" class="btn btn-outline-success"> Mark as Shipped</button>
+                <button type="submit" class="btn btn-outline-success shadow"> Mark as Shipped</button>
             </form>
+
             {% endif %}
         </div>
+
     </div>
 </div>
+
+
+
 {% endblock content %}

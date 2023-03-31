@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="{% url 'index' %}">Coders Cafe</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+  <a class="navbar-brand mytext_style1" href="{% url 'index' %}">Coders Cafe</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
     aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -7,15 +7,16 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav me-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="{% url 'about' %}">About <span class="sr-only"></span></a>
+        <a class="nav-link mytext_style1 text-white" href="{% url 'about' %}">About <span class="sr-only"></span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{% url 'menu' %}">Menu</a>
+        <a class="nav-link mytext_style1 text-white" href="{% url 'menu' %}">Menu</a>
       </li>
     </ul>
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="{% url 'order' %}">Place an Order!</a>
+        <a class="nav-link mytext_style1 text-white" href="{% url 'order' %}">Place an
+          Order!</a>
       </li>
     </ul>
   </div>
