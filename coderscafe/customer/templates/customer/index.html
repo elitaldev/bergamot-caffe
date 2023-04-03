@@ -1,14 +1,16 @@
 {% extends 'customer/base.html' %} {% block content %}
-<div class="container mb-5" id="front-page">
-  <div class="row justify-content-center mt-1">
-    <div class="col-md-8 col-sm-12 offset-md-1 p-4 text-center">
+<div class="container-fluid mb-5" id="front-page">
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-sm-12 p-4 text-center">
       <h1 class="text-light mytext_style2">BERGAMOT CAFE</h1>
     </div>
   </div>
-  <div class="row justify-content-center mt-1">
-    <div class="card text-bg-light col-md-3 col-sm-12 offset-md-1 p-4 text-center">
+
+  <div class="row justify-content-center">
+    <div class="col-md-3 col-sm-12 p-4 text-center">
       <h2 class="mytext_style">Place an Order</h2>
-      <a href="{% url 'order' %}" class="btn btn-outline-dark mytext_style">Order Now!</a>
+      <a href="{% url 'order' %}" class="btn btn-outline-success shadow
+       mytext_style">Order Now!</a>
     </div>
   </div>
 </div>

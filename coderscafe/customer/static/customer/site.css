@@ -25,6 +25,12 @@
     font-style: normal;
 }
 
+.mytext_style4 {
+    font-family: 'Kurale', serif;
+    color: #0d9c0d;
+    text-shadow: 3px 4px 3px rgb(183, 218, 162);
+}
+
 #front-page {
     background: url('./bergamot.jpg') no-repeat;
     background-size: cover;
