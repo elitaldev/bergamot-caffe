@@ -1,9 +1,11 @@
-# Incredible India - Introduction
+# bergamot cafe - Introduction
 
-**Incredible India** blog website is developed using Django Framework as part of Portfolio Project 4 for my Diploma in Full Stack Software Development at Code Institute.
+**bergamot cafe** this website is developed using Django Framework as part of Portfolio Project 4 for my Full Stack Software Development at Code Institute.
 
-> It targets **tourist destinations** of India, where user can view the blog post of tourist destinations.
-The user can view the blog post and comments. When the user is logged in, user can like/unlike a post, comment on a post and add a post from the user page.
+> It targets **customers** of cafe, where user can view the menu and the prices. the customer can view the menu images.
+when they log in they would be able to choose a diffrent type of items from the menu and make there way to the payment page.  
+
+
 
 You can view the live site here:- https://incredible-india.herokuapp.com/
 
@@ -13,7 +15,7 @@ You can view the live site here:- https://incredible-india.herokuapp.com/
 ----
 
 ## [Content](#content)
-- [Incredible India - Introduction](#incredible-india---introduction)
+- [bergamot cafe - Introduction](#incredible-india---introduction)
   - [User Experience - UX](#user-experience---ux)
     - [Site Aims](#site-aims)
     - [Agile Methodology](#agile-methodology)
@@ -70,7 +72,7 @@ You can view the live site here:- https://incredible-india.herokuapp.com/
 
 ## Site Aims
 
-* Incredible India is a website mainly meant to explore the Indian tourist destinattions with a good user experience.
+* bergamot cafe is a cafe website mainly meant to explore the iranian food with a best quality and a good user experience.
 * The site aims to provide user with a visually pleasing and informative website that is intuitive to use and easy to navigate.
 * This website provides the user with the ability to read and view posts, as well as tools that allow users to search for a particular destination posts.
 * All users who sign up and sign in, can access the features of add post, like/unlike and comment on a blog post of this website.

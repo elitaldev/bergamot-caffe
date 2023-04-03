@@ -6,6 +6,19 @@
 
 }
 
+.mytext_style3 {
+    font-family: 'Kurale', serif;
+    color: #0d9c0d;
+    text-shadow: 3px 4px 3px rgb(183, 218, 162);
+}
+
+.mytext_style2 {
+    font-family: 'Kurale', serif;
+    color: white;
+    text-shadow: 3px 4px 3px #0d9c0d;
+
+}
+
 
 .mytext_style1 {
     font-family: 'Kurale', serif;
@@ -19,9 +32,6 @@
     height: 100vh;
 }
 
-#logo {
-    background: url('./bergamotlogo.jpg');
-}
 
 .form-border {
     border: 1px solid #c7c6c6;
@@ -30,13 +40,23 @@
 
 #about-background {
     background: url('./aboutus.jpg') no-repeat;
-
     width: 100%;
-    height: 230px;
+    height: 360px;
 
 
 }
 
-.back-page {
-    background-color: antiquewhite;
+.back-pay {
+    background-color: rgb(247, 247, 174);
+    height: 100vh;
+
+}
+
+.back-order {
+    background-color: rgb(239, 247, 217);
+}
+
+.back-dash {
+    background-color: rgb(250, 250, 219);
+    height: 100vh;
 }
