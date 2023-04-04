@@ -74,9 +74,9 @@ You can view the live site here:- https://incredible-india.herokuapp.com/
 
 * bergamot cafe is a cafe website mainly meant to explore the iranian food with a best quality and a good user experience.
 * The site aims to provide user with a visually pleasing and informative website that is intuitive to use and easy to navigate.
-* This website provides the user with the ability to read and view posts, as well as tools that allow users to search for a particular destination posts.
-* All users who sign up and sign in, can access the features of add post, like/unlike and comment on a blog post of this website.
-* User can access all the features of the website and can read, create, edit, and delete their own posts.
+*  this website gives users the easiest way to make theie order online.
+* the website offers diffrent type of foods and drinks and users can make payment by cash or paypal.
+
 
 ## Agile Methodology
 
@@ -88,60 +88,24 @@ The Agile Methodology was used to plan this project. This was implemented throug
 
 Please find my Kanban Board with my user stories [here](https://github.com/users/jyotiyadav2508/projects/3/views/1).
 
-## Epics and User Stories
 
-Following Epics were created which were further developed into 19 User Stories.
-
-### Epic 1- Website UI
-Epic Goals for User- 
-* An intuitive User Interface with easy to navigate throughout the website 
-* Easily see the purpose of the site from the landing page
-* View a list of destinations and blog posts
-* Search bar for quick and easy access to required information
 
 #### Related User Stories:
 * As a site user I can easily see the purpose of the site from the landing page so that I can see if the site is relevant to my needs.
-* As a site user I can view a list of destinations so that I can see a list of posts relating to my specific interest.
-* As a site user I can view a paginated list of posts so that easily select a post to view.
-* As a site user I can click on a post so that I can read the full article.
-* As a site user I can use a search bar to search for a specific place so that I have quick and easy access to the information I need.
+* As a site user I can view a list of destinations which can take me to the diffrent pages. 
+* As a site user I can view a diffrent type of food and drink to order.
+* As a site user I can click on submitting my order to going back to the home page.
+* As a site user I can use a search bar to search for a specific food, drink, dessert i am looking for.
 
-### Epic 2- Registration and Account Management
-Epic Goals-
-* Easy registration of an account
-* Easy Sign Up, Sign in and Sign Out
-* Upon signing in, the user should be able to like, comment on a blog post
-* Easy access to Create, Read, Update and Delete (CRUD) features upon signing in
-* Visibility of personalized blog posts and comments
+
 
 #### Related User Stories:
-* As a site user, I can register an account so that I can comment and like.
+* As a site user, I can register and submit my order.
 * As a registered user, I can login and logout of the site so that I can access my content.
-* As a site user, I can view the number of likes on each post so that I can see which is the most popular or viral.
-* As a site user, I can view comments on an individual post so that I can read the conversation.
-* As a registered user, I can create a post of tourist place so that I can share it with other.
+* As a site user, I can view my order history and total amount of products.
+* As a site user, I can pay with my own paypal account.
 
-### Epic 3- Blog Post Management
-Epic Goals-
-* Create/ Update / Read / Delete blog posts.
-* View their created blog posts
-* Approve and publish a post
 
-#### Related User Stories:
-* As a site admin, I can create draft posts so that I can finish writing the content later.
-* As a site admin/author, I can create, read, update and delete posts to manage the blog content.
-* As a site admin, I can delete any comment so that I can filter out objectionable comments.
-* As a author, I can access all my blog posts easily in one place so that I can easily track my activity on the site.
-
-### Epic 4- Comments and Like Management
-Epic Goals-
-* Add /Delete and View Comments on a post
-* Like / Unlike a post
-
-#### Related User Stories:
-* As a logged-in user I can leave comments on a post so that I can be involved in the conversation.
-* As a logged-in user I can edit/delete my comments so that I can update/delete my post opinion.
-* As a logged-in user I can like or unlike a post so that I can interact with the content.
 
 ## Tasks
 
@@ -152,7 +116,7 @@ The tasks that I have followed during the development phase were carried out in 
 
 - Design ERD and Data 
 - Create Repository in GitHub
-- Create Project, Epics, User Stories and prepare Kanban Board
+- Create Project, User Stories and prepare Kanban Board
 
 **Creation of Project in GitPod**
 
@@ -164,39 +128,31 @@ The tasks that I have followed during the development phase were carried out in 
 - Set up Templates
 	- Create base.html - Navbar and Footer content, which gets extended to all the other template files
 	- Add responsiveness to navigation and footer
-    - Create index.html, view and style
+  - Create index.html, view and style
 	- Set up template file features with views.py and urls.py
-  - about.html (Description about incredible india)
-  - blog.html (to view all blog posts)
-  - user_page.html (for user's personal collections)
-  - post_details.html (for detailed post view)
-  - edit_comment.html (to update the comment)
-  - destinations_post.html (to view blog post for a selected destination)
-  - add_post.html (to allow user's input for blog posts)
-  - delete_post.html (to allow user to delete his post)
-  - search.html (to search a blog post)
-  - update_post.html (to allow user to edit his post)
-  - user_post_list.html (to allow user to view all post, which he posted so far)
-- Install Allauth for sign in, sign up and sign out templates with-  pip3 install django-allauth 
-	- Install crispy-forms to add styles to Django account templates with-  pip3 install crispy-bootstrap5
-- Intensive Manual Testing and Validation checks of each page and codes written
-- Final Deployment steps
+  - about.html (Description about bergamot cafe)
+  - order-confirmation (to submit your order)
+  - (to allow user to edit his post)
+  - naviation.html (to allow user to get access to other pages )
+  - Install Allauth for sign in, sign up and sign out templates with-  pip3 install django-allauth 
+  - Install crispy-forms to add styles to Django account templates with-  pip3 install crispy-bootstrap5
+  - Final Deployment steps
 
 -----
 
-[Back to top](#content)
+
 
 ## Design
 
 ### Colours
 
-The colour scheme has considered based on easy accessibility for all and have been consistently maintained throughout the website. The colours were modified using [Colorswall](https://colorswall.com/). 
+The colour scheme has considered based on easy accessibility for all and have been consistently maintained throughout the website. The colours were modified using 
 
-![Color Palette](assets/features/color-palette.jpg)
+![Color Palette](/coderscafe/cafe/assets/image/cooler.png)
 
 ### Typography
 
-Fonts were imported using Google Fonts. Roboto was used throughout with a backup of sans-serif. It was chosen for easy readability for users.
+Fonts were imported using Google Fonts. Roboto was used throughout with a backup of kurale, sans-serif. It was chosen for easy readability for users.
 
 ### Imagery
 
@@ -204,10 +160,12 @@ All the imagery is related to the Indian tourist destination and website design.
 
 ### Wireframes
 
-The wireframes for this projected were generated using Balsamiq. 
-- [Wieframes for Desktop](assets/wireframes/Desktop-Wireframe.pdf)
-- [Wieframes for Tablet](assets/wireframes/Tablet-Wireframes.pdf)
-- [Wieframes for Mobile](assets/wireframes/Mobile-Wireframes.pdf)
+The wireframes for this projected were generated using pen and paper. 
+- [Wieframes for menu](/coderscafe/cafe/assets/image/menu-page.png)
+- [Wieframes for home](/coderscafe/cafe/assets/image/home-page.png)
+- [Wieframes for submit](/coderscafe/cafe/assets/image/submit-page.png)
+- [Wieframes for about](/coderscafe/cafe/assets/image/about-page.png)
+
 
 ----
 
@@ -215,9 +173,8 @@ The wireframes for this projected were generated using Balsamiq.
 
 Smart Draw was used to create a database schema to visualise the types of custom models the project requires. This schema was used as a guide to what needed to be added to each model. Below is the Database structure that this project is based on. The relationship between Entities Post, Author, Destination and Comment are shown in this diagram.
 
-![ER Diagram](assets/ERD/Database_Diagram.jpg)
+![ERD Diagram](/coderscafe/cafe/assets/image/RED.png)
 
-[Back to top ⇧](#content)
 
 ----
 
@@ -225,241 +182,90 @@ Smart Draw was used to create a database schema to visualise the types of custom
 
 ## Home Page
 
-At the very first glimpse, user can see a Navigation menu with a search button and carousel-images on the homepage. Homepage provides the user with some quick information about the site and make use of all its features. User do not need to be registered to view a blog post. The responsive navigation bar is featured on all pages. 
+At the very first page, user can see a Navigation menu with a order button and a background images on the homepage. Homepage provides the user with big image of the friendly cafe and a relaxing place to spend some times with family. User do not need to be registered to view the menu. The responsive navigation bar is featured on all pages. 
 
-![Homepage](assets/features/home-page.jpg)
-
-----
-
-- Upon scrolling down, there is destination section which indicates the available types of tourist destination blog post. Each destination card filter the post by destination name and navigate to that particular blog posts. 
-
-![Destination](assets/features/destinations-section1.jpg)
-![Destination](assets/features/destinations-section2.jpg)
-![Destination](assets/features/destinations-section3.jpg)
-
-----
-
-- User can also select a specific destination blog posts from the navbar dropdown which navigates to that specific destination blog posts.
-
-![Destination](assets/features/dropdown-destination.jpg)
+![Homepage](/coderscafe/cafe/assets/image//homepage.png)
 
 ----
 
 ## Navbar
 
 - The navigation bar is present at the top of every page and navigates all links to the respective pages.
-- The options to Register or Log in will change to the option to log out once a user has logged in.
 - The navbar is fully responsive, collapsing into a hamburger menu when the screen size becomes smaller.
+- The navbar has linked to three diffrent pages.
+![Navbar](/coderscafe/cafe/assets/image/navbar.png)
 
-![Navbar](assets/features/navbar.jpg)
-
-![Navbar](assets/features/nav-hamburger.jpg)
-
-## Navbar after loged in user
-
-* If the user is logged in (username Mahi is provided as an example here), navbar will be shown with user name and logout options. On a desktop, the navigation menu will appear as shown below:
-
-![logged-in-user-Navbar](assets/features/logged-in-user-navbar.jpg) 
-
-## User Page
-
-* This page will be only visible to logged-in user. Navbar will show this page with the username on it. When the user clicks on his/her name in the navbar, the user navigates to the User page. On this user page, the user can create new posts or view his old posts list to edit and delete any of his posts.
-
-![logged-in-user-page](assets/features/logged-in-user-page.jpg) 
-
-* When user clicks on the 'Add New Post' button, following form will be displayed.
-
-![Add-post](assets/features/add-post-form.png)
-
-* If the user does not provide an image, the following default image will be presented.
-
-![Default-post-image](assets/features/default-post-image.jpg)
+![Navbar]()
 
 
-* User can access all his posts by clicking on 'View Old Post' button. User can see the list of posts in this page which he has posted till now. Here he/she can edit or delete any of his post.
 
-![user-post-list](assets/features/user-post-list.jpg) 
-![edit-delete-post](assets/features/edit-delete-post.jpg)
-
-* If the user wants to edit his/her post, the following update form will be displayed with pre-filled content.
-
-![update-post](assets/features/update-post-form.png)
-
-
-* User can see the following message to make sure to delete his post.
-
-![delete-post](assets/features/delete-post.jpg)
-
-
-* If the user hasn't posted anything before, the user will be shown that there are no posts and they can create.
-
-![no-user-post](assets/features/no-user-post.jpg) 
 
 ----
 
 ## Footer
 
-- On the website footer, users can see basic information such as my social media, copyright, and a quote about Incredible India.
+- On the website footer, users can see basic information such, copyright, and cafe login.
 
-![Navbar](assets/features/footer.jpg)
+![Navbar](/coderscafe/cafe/assets/image/footer.png)
 
 ----
 
 ## About Page
 
-- The About Page gives, users information about the Incredible India with a brief discription of india and the travel options to reach there.
+- The About Page gives, users information about the bergamot cafe with a brief discription of iranian food and culture.
 
-![About Us](assets/features/about-us-page1.jpg)
-![About Us](assets/features/about-us2.jpg)
+![About Us](/coderscafe/cafe/assets/image/aboutpage.png)
+
+
+
+
+
 
 ----
 
-## Blog Page
+## order Button 
 
-This page enlists all the blog posts added so far to the website. The blog posts is paginated in a way that 9 posts are displayed. Further post can be accessed by clicking next button. Each blog post shows the image overlay with the destination type. The card body displays blog post title with specific fields and sliced post content along with the name of author, submitted date and shows the number of likes and comment icon in the card footer.
+On the top middle of the landing page, an order buttonwill take you to the order and submite your order page. input field is provided along with a button to submit. This allows the user to choose the food and make threr way to the payment.
 
-![Blog Page](assets/features/blog-page1.jpg)
-![Blog Page](assets/features/blog-page2.jpg)
-
-----
-
-## Post-Detail Page
-
-- When a user clicks on the image or title of the blog post, they are brought to the post details page for the selected blog post. Here the user is shown the complete details of the blog post with image, author name, created time, title, best time, ideal-duration, number of likes and comments along with full content.
-- Underneath the post description the page displays all the approved comments on that blog post posted by signed-in users. 
-- At the bottom of this page, the Comment box is visible to the users.
-
-![Post-detail](assets/features/post-details1.jpg)
-![Post detail](assets/features/post-details2.jpg)
-
-- If user is signed-in, following comment box will appear. 
-
-![Comment box](assets/features/comment-box-login-user.jpg)
-
-- When User submit a comment or like/unlike a post, following messages/ alert displays respectively.
-
-![Comment-alert](assets/features/comment-alert.jpg)
-![Like post alert](assets/features/like-alert.jpg)
-![Unlike-post-alert](assets/features/unlike-alert.jpg)
-
-- Signed-in users can only edit/delete their own comments.
-
-![Edit Delete Comment](assets/features/edit-delete-comment.jpg)
-
-- When the user clicks on the delete button to remove his comment, following alert message pops up.
-
-![Delete Comment Alert](assets/features/delete-comment-alert.jpg)
-
-
-- User navigates to the edit-page when he clicks on the edit button. Here he can edit his comment text. 
-![Edit Comment](assets/features/edit-comment.jpg)
-
-- When user clicks on update button, a successful update alert message is displayed.
-
-![Update Comment Alert](assets/features/update-comment-alert.jpg)
-
-----
-
-## Destination Page
-
-User can select a specific destination blog posts either from destination section on home page or from the navbar dropdown which navigates to that specific destination blog posts.
-
-![Dropdown destination](assets/features/dropdown-destination.jpg)
-
-- For example, if user select a destination such as a hill station, the filtered blog posts will be displayed.
-![Filter destination posts](assets/features/selected-destination-post.jpg)
-
-- If there is no post for any selected destination, user will see the following message.
-![No post message](assets/features/no-destination-post.jpg)
-
-----
-
-## Security
-In order to properly interact with the website, the user needs to have an account and sign in. This ensures security of their comments and gives them rights to create, modify and delete them.
-
-### Sign Up
-
-- User is asked to enter username and password to sign up. User will be guided by validation messages if the username exists or password is too small which was created by modifying Django inbuilt templates.
-![Signup page](assets/features/user-register-page.jpg)
-
-- When users sign up to the website they will see a message at the top of the page saying "Successfully signed in as (username)".
-![Sign Up alert](assets/features/user-registration-alert.jpg)
-
-### Sign In
-
-- User can enter username and password to sign in. User will be guided by validation messages if the username or password is not correct. This was created by modifying Django inbuilt templates.
-
-![Sign In page](assets/features/user-login-page.jpg)
-
-- When users sign in to the website they will see a message at the top of the page saying "Successfully signed in as (username)".
-
-![Sign In alert](assets/features/signed-in-alert.jpg)
-
-### Sign Out
-
-- If the user is signed-in, then only they can see Logout nav-item in navbar. User will be taken to the Sign Out page. This was created by modifying Django inbuilt templates. When the user signs out, they are redirected to homepage.
-
-![Sign out page](assets/features/logout-page.jpg)
-
-- When users log out of the website they will see a message at the top of the page saying "You have signed out".
-
-![Sign out alert](assets/features/signout-alert.jpg)
-
-----
-
-## Search Button 
-
-On the top right corner, a search input field is provided along with a button to submit. This allows the user to try and find the post they are looking for.
-
-![Search button](assets/features/search-button.jpg)
+![Search button](/coderscafe/cafe/assets/image/order-button.png)
 
 - On the search results page, users can see posts related to their search. If there are posts for the user's search input, the user can click on the card result to go to the post detail page.
 
-![Search result](assets/features/search-result.jpg)
+![order menu](/coderscafe/cafe/assets/image/order-menu.png)
 
-- On the search results page, users will see this message if nothing is found for the search.
+- On the order menu page, users will see the menu images and can search what they are looking for through the search bar.
 
-![Search result](assets/features/no-search-result.jpg)
+![input form](/coderscafe/cafe/assets/image/inpur-orde.png)
 
-- On the search results page, users will see this message for empty input.
 
-![Search result](assets/features/empty-input-for-search.jpg)
+- users can submit their order by clicking the submit button below.
 
+![submit button](/coderscafe/cafe/assets/image/submit-button.png)
+
+- On the order page, users will be able to search for the item they are looking for via the search bar below.
+
+![search bar](/coderscafe/cafe/assets/image/search-bar.png)
 ----
 
-[Back to top ⇧](#content)
 
 ## Admin Panel/Superuser
 
-- Admin accesses the project via logging into Django admin panel with a superuser id and password. The page appears as shown [here](assets/features/admin-panel-login.jpg).
+- Admin accesses the project via logging into Django admin panel with a superuser id and password. The page appears as shown ![search bar](/coderscafe/cafe/assets/image/admin-page.png).
 - A superuser "admin" was created for this project to manage the admin panel.
-- On the Admin Panel, as an admin I have full access to CRUD functionality so I can view, create, edit and delete the following ones:
-  - Posts
-  - Comments
-  - Author
-  - Destination
-- As admin I can also approve comments, approve posts and change the status and give other permissions to the users.
+- On the Admin Panel, as an admin I have full access to CRUD functionality so I can view, create, edit, add and delete the following ones:
+  - groups
+  - Category
+  - menu item
+  - order model
+- As admin I can also add menu image, approve users and change the status and give other permissions to the users.
 
-### Admin 'Post' Model Management
+### Admin login
 
-- On selecting Blog "Post", a list of blog posts is displayed with its title, slug, status, created_on and author name. Admin can select the post and edit or delete its data.
-- When a blog post is submitted by a user, its status is set to Draft by default.
-- When the status is set to Publish on Admin Approval, the post starts appearing in the website.
+- this is where admin can sign in with username and password.
 
-The admin site for post model appears as shown [here](assets/features/admin-panel-post-model.jpg).
+ ![search bar](/coderscafe/cafe/assets/image/signin.png).
 
-### Admin 'Comment' Model Management
 
-- Upon selecting the Blog "Comment" model, a list of comments on a post is displayed with the username, comment body, post title, status and created_on. Admin can select the comment and edit or delete its data.
-- When a comment is submitted by a user, it requires approval from an admin in order to publish it on the comments section.
-
-The admin site for comment model appears as shown [here](assets/features/admin-panel-comment-model.jpg).
-
-### Admin 'Destination' Model Management
-
-- On selecting the Blog "Destination" model, a list of destinations for the blog post is displayed with title, slug and excerpt fields. Only Admin can add, edit or delete any destination data.
-
-The admin site for destination model appears as shown [here](assets/features/admin-panel-destination-model.jpg).
 
 ----
 
@@ -488,16 +294,13 @@ The admin site for destination model appears as shown [here](assets/features/adm
 * [Bootstrap](https://getbootstrap.com/)- Used to style the website, add responsiveness and interactivity.
 * [Git](https://git-scm.com/)- Used for version control by utilizing the Gitpod terminal to commit to Git and push to GitHub.
 * [GitHub](https://github.com/)- Used to store the project's code after being pushed from Git.
-* [Heroku](https://id.heroku.com)- Used to deploy the live project.
-* [PostgreSQL](https://www.postgresql.org/)- Database used through heroku.
-* [Balsamiq](https://balsamiq.com/)- To build the wireframes for the project.
-* [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) was used to inspect page elements, debug, troubleshoot and test features and adjust property values. Using the Lighthouse extension installed in Chrome Browser, the performance report was generated.
-* [Google Fonts:](https://fonts.google.com/) used for the Roboto font
-* [Font Awesome:](https://fontawesome.com/) was used to add icons for aesthetic and UX purposes.
+* [PostgreSQL](https://www.postgresql.org/)- Database used through ORM.
+* [Google Fonts:](https://fonts.google.com/) used for the Kurale, serif font
+* [Font Awesome:](https://fontawesome.com/) was used to add icons for DJANGO and UX purposes.
 
 -----
 
-[Back to top ⇧](#content)
+
 
 ## Testing
 
@@ -518,7 +321,7 @@ Testing has taken place continuously throughout the development of the project. 
 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
-| In navbar, the menu item destination dropdown was not populating.| Create destination_list view that return context (destination_list) then add `'blog.views.destinations_list'` in templates section in settings.py file |
+| In navbar, the menu i.| Create destination_list view that return context (destination_list) then add `'blog.views.destinations_list'` in templates section in settings.py file |
 | Post image was not rendering on post_detail page(Issue only for mobile screens). | Remove class 'd-none' from post_detail page |
 | Alert messages was not disappeare after setTimeOut(2000)<br><details><summary>Alert Code</summary><img src="assets/alert-js.jpg"></details> | Copy code from bootstrap alert and customize with forEach <br><details><summary>New Alert Code</summary><img src="assets/new-alert-js.jpg"></details>|
 | Destination dropdown was again not populating. | Remove script scr 'bootstrap.min.js' because there is already 'bootstrap.bundle.min.js' |
