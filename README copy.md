@@ -1,16 +1,16 @@
 # bergamot cafe - Introduction
 
-**bergamot cafe** this website is developed using Django Framework as part of Portfolio Project 4 for my Full Stack Software Development at Code Institute.
+**bergamot cafe** this website is developed using Django Framework as part of Portfolio Project 3 for my Full Stack Software Development at Code Institute.
 
 > It targets **customers** of cafe, where user can view the menu and the prices. the customer can view the menu images.
 when they log in they would be able to choose a diffrent type of items from the menu and make there way to the payment page.  
 
 
 
-You can view the live site here:- https://incredible-india.herokuapp.com/
+You can view the live site here:- https://8000-elitaldev-bergamotcaffe-krr7xhzr74i.ws-eu93.gitpod.io/
 
 
-![mockup](assets/mockup.jpg)
+![mockup](/coderscafe/cafe/assets/image/mockup.png)
 
 ----
 
@@ -64,7 +64,7 @@ You can view the live site here:- https://incredible-india.herokuapp.com/
 
 * bergamot cafe is a cafe website mainly meant to explore the iranian food with a best quality and a good user experience.
 * The site aims to provide user with a visually pleasing and informative website that is intuitive to use and easy to navigate.
-*  this website gives users the easiest way to make theie order online.
+*  this website gives users the easiest way to make their order online.
 * the website offers diffrent type of foods and drinks and users can make payment by cash or paypal.
 
 
@@ -76,7 +76,7 @@ The Agile Methodology was used to plan this project. This was implemented throug
 * In Progress- (then during development story they were moved into the 'In Progress' column)
 * Done- (and then finally they get moved into 'Done' once the development completes)
 
-Please find my Kanban Board with my user stories [here](https://github.com/users/jyotiyadav2508/projects/3/views/1).
+Please find my Kanban Board with my user stories [here](/coderscafe/cafe/assets/image/kanban.png).
 
 
 
@@ -110,8 +110,7 @@ The tasks that I have followed during the development phase were carried out in 
 
 **Creation of Project in GitPod**
 
-- Create the django project. Check details in [deployment-section](#deployment)
-- Deploying app to Heroku - Details in [deployment](#deployment) section
+- Create the django project. 
 - Create Database Models
 	- Set up models.py file in "blog" directory
 - Build Admin site
@@ -122,11 +121,10 @@ The tasks that I have followed during the development phase were carried out in 
 	- Set up template file features with views.py and urls.py
   - about.html (Description about bergamot cafe)
   - order-confirmation (to submit your order)
-  - (to allow user to edit his post)
   - naviation.html (to allow user to get access to other pages )
   - Install Allauth for sign in, sign up and sign out templates with-  pip3 install django-allauth 
-  - Install crispy-forms to add styles to Django account templates with-  pip3 install crispy-bootstrap5
-  - Final Deployment steps
+  - Install crispy-forms to add styles to Django account templates with-  pip3 install crispy-bootstrap4
+  
 
 -----
 
@@ -152,9 +150,13 @@ All the imagery is related to the Indian tourist destination and website design.
 
 The wireframes for this projected were generated using canva. 
 ![Wieframes for menu](/coderscafe/cafe/assets/image/menu-page.png)
+
 ![Wieframes for home](/coderscafe/cafe/assets/image/home-page.png)
-![Wieframes for submit](/coderscafe/cafe/assets/image/submit-page.png)
+
+![Wieframes for submit](/coderscafe/cafe/assets/image/order-page.png)
+
 ![Wieframes for about](/coderscafe/cafe/assets/image/about-page.png)
+
 ![Wieframes for paypal](/coderscafe/cafe/assets/image/paypal.png)
 
 
@@ -209,7 +211,11 @@ At the very first page, user can see a Navigation menu with a order button and a
 
 
 
+## model 
 
+- submiting and placing an order. 
+
+![About Us](/coderscafe/cafe/assets/image/popup.png)
 
 
 ----
@@ -274,9 +280,6 @@ On the top middle of the landing page, an order buttonwill take you to the order
 
 ### Django Packages
 
-* [Cloudinary](https://cloudinary.com/)- Was used to host the static files and media for the site.
-* [Dj_database_url](https://pypi.org/project/dj-database-url/)- To parse the database URL from the environment variables in Heroku.
-* [Psycopg2](https://pypi.org/project/psycopg2/)- As an adaptor for Python and PostgreSQL databases.
 * [Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)- For authentication, registration, account management.
 * [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)- To style the forms.
 
@@ -303,9 +306,13 @@ I used the following validation tools to validate CSS. Below the link of TESTING
 
 
 ### Manual Testing
-Testing has taken place continuously throughout the development of the project. Each view was tested regularly. When the outcome was not as expected, debugging took place at that point. An exhaustive list of features were checked on different devices and browsers. They were performed and their scrrenshots can be found in the features section on how the distinct features render. All clickable links redirect to the correct pages.
+Testing has taken place continuously throughout the development of the project. Each view was tested regularly. I went through all the pages, tried to order , made a payment via paypal. In menu page I searched for some items in the search bar.everything was perfectly working.I only faced one issue when I was trying to make a payment which was sorted out with help of my teacher.   
 
-- Link for TESTING.md file:- [Testing Results Here](TESTING.md)
+- Link for TESTING.md file:- [Testing Results Here](/coderscafe/cafe/assets/image/test1.png)
+
+- Link for TESTING.md file:- [Testing Results Here](/coderscafe/cafe/assets/image/test2.png)
+
+- Link for TESTING.md file:- [Testing Results Here](/coderscafe/cafe/assets/image/bug.png)
 
 ----
 
@@ -337,8 +344,7 @@ Testing has taken place continuously throughout the development of the project. 
 * Name our repository and click on `Create repository from template` button.
 * Once the template is available in your repository click on `Gitpod` button.
 * When the image for the template and the Gitpod are ready, open a new terminal to start a new Django App.
-* Install Django and gunicorn: `pip3 install 'django<4' gunicorn`.
-* Install supporting database libraries dj_database_url and psycopg2 library: `pip3 install dj_database_url==0.5.0 psycopg2`.
+* Install Django and gunicorn: `pip3 install 'django<4'`.
 * Install Cloudinary libraries to manage static files: `pip install dj-3-cloudinary-storage`.
 * Create file for requirements: `pip freeze --local > requirements.txt`.
 * Create project:`django-admin startproject project_name .`.
@@ -372,12 +378,6 @@ Testing has taken place continuously throughout the development of the project. 
 * Commit and push the code to the GitHub Repository.
 
 
-### 6. Final Deployment
-In the IDE:
-* When development is complete change the debug setting to: `DEBUG = False` in `settings.py` 
-* In Heroku settings config vars change the `DISABLE_COLLECTSTATIC` value to 0
-* Because DEBUG must be switched to True for development and False for production it is recommended that only manual deployment is used in Heroku. 
-* To manually deploy click the button 'Deploy Branch'. The default 'main' option in the dropdown menu should be selected in both cases. When the app is deployed a message 'Your app was successfully deployed' will be shown. Click 'view' to see the deployed app in the browser.
 
 ----
 
