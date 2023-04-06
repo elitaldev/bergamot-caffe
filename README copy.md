@@ -50,7 +50,6 @@ You can view the live site here:- https://incredible-india.herokuapp.com/
      - [Deployment](#deployment)
       - [Creating the Django project](#creating-the-django-project)
       - [Set up Environment Variables](#set-up-environment-variables)
-      - [Heroku deployment](#heroku-deployment)
       - [Final Deployment](#final-deployment)
   - [Credits](#credits)
     - [Content](#content)
@@ -151,12 +150,12 @@ All the imagery is related to the Indian tourist destination and website design.
 
 ### Wireframes
 
-The wireframes for this projected were generated using pen and paper. 
-- [Wieframes for menu](/coderscafe/cafe/assets/image/menu-page.png)
-- [Wieframes for home](/coderscafe/cafe/assets/image/home-page.png)
-- [Wieframes for submit](/coderscafe/cafe/assets/image/submit-page.png)
-- [Wieframes for about](/coderscafe/cafe/assets/image/about-page.png)
-- [Wieframes for paypal](/coderscafe/cafe/assets/image/paypal.png)
+The wireframes for this projected were generated using canva. 
+![Wieframes for menu](/coderscafe/cafe/assets/image/menu-page.png)
+![Wieframes for home](/coderscafe/cafe/assets/image/home-page.png)
+![Wieframes for submit](/coderscafe/cafe/assets/image/submit-page.png)
+![Wieframes for about](/coderscafe/cafe/assets/image/about-page.png)
+![Wieframes for paypal](/coderscafe/cafe/assets/image/paypal.png)
 
 
 ----
@@ -187,7 +186,7 @@ At the very first page, user can see a Navigation menu with a order button and a
 - The navbar has linked to three diffrent pages.
 ![Navbar](/coderscafe/cafe/assets/image/navbar.png)
 
-![Navbar]()
+![hamburger Navbar](/coderscafe/cafe/assets/image/burger-menu.png)
 
 
 
@@ -300,7 +299,7 @@ On the top middle of the landing page, an order buttonwill take you to the order
 ### Validation
 I used the following validation tools to validate CSS. Below the link of TESTING.md file, which includes all validation results.  
 
-- CSS using [Jigsaw CSS validator](https://jigsaw.w3.org/css-validator/)
+- CSS using [Jigsaw CSS validator](/coderscafe/cafe/assets/image/w3%20css.png)
 
 
 ### Manual Testing
@@ -314,7 +313,7 @@ Testing has taken place continuously throughout the development of the project. 
 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
-| In menu page, I had issue uploadind images.| I finally i manged to fixed it going through out my download files. |
+| In menu page, I had issue uploadind images.| I finally  manged to fixed it going through out my downloaded files. |
 | I had issue with hovering on the striped table  | After searching on w3 school website and going through bootstrap I was able to fix the problem. |
 | I had problem seprating two card in my dashboard  | Copy code from bootstrap alert and customized it.|
 | I had small issue positioning my logo image to the bottom left of the page | I did manage to put it in right place after searching and with help of my teacher  |
