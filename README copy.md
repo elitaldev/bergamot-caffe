@@ -15,11 +15,10 @@ You can view the live site here:- https://incredible-india.herokuapp.com/
 ----
 
 ## [Content](#content)
-- [bergamot cafe - Introduction](#incredible-india---introduction)
+- [bergamot cafe - Introduction](#)
   - [User Experience - UX](#user-experience---ux)
     - [Site Aims](#site-aims)
     - [Agile Methodology](#agile-methodology)
-      - [Epics and User Stories](#epics-and-user-stories)
       - [Tasks](#tasks)
   - [Design](#design)
     - [Colours](#colours)
@@ -35,12 +34,8 @@ You can view the live site here:- https://incredible-india.herokuapp.com/
       - [Footer](#footer)
     - [User Page](#user-page)
     - [About Page](#about-page)
-    - [Blog Page](#blog-page)
-      - [Blog Details](#blog-details)
-      - [Blog Comments](#blog-comments)
     - [Register](#register)
     - [Login](#login)
-    - [Logout](#logout)
     - [Destinations](#destinations)
     - [Search Button](#search-button)
     - [Alert Messages](#alert-messages)      
@@ -49,15 +44,11 @@ You can view the live site here:- https://incredible-india.herokuapp.com/
     - [Languages Used](#languages-used)
     - [Django Packages](#django-packages)
     - [Frameworks - Libraries - Programs Used](#frameworks---libraries---programs-used)
-  - [Testing](#testing)
-      - [Validation](#validation)
-      - [Manual Testing](#manual-testing)
-  - [Bugs](#bugs)
+    - [Bugs](#bugs)
       - [Fixed Bugs](#fixed-bugs)
       - [Unfix Bugs](#unfix-bugs)
-  - [Deployment](#deployment)
+     - [Deployment](#deployment)
       - [Creating the Django project](#creating-the-django-project)
-      - [Creating Heroku app](#creating-heroku-app)
       - [Set up Environment Variables](#set-up-environment-variables)
       - [Heroku deployment](#heroku-deployment)
       - [Final Deployment](#final-deployment)
@@ -165,6 +156,7 @@ The wireframes for this projected were generated using pen and paper.
 - [Wieframes for home](/coderscafe/cafe/assets/image/home-page.png)
 - [Wieframes for submit](/coderscafe/cafe/assets/image/submit-page.png)
 - [Wieframes for about](/coderscafe/cafe/assets/image/about-page.png)
+- [Wieframes for paypal](/coderscafe/cafe/assets/image/paypal.png)
 
 
 ----
@@ -245,6 +237,9 @@ On the top middle of the landing page, an order buttonwill take you to the order
 - On the order page, users will be able to search for the item they are looking for via the search bar below.
 
 ![search bar](/coderscafe/cafe/assets/image/search-bar.png)
+
+- when a user made their order and submited it, they shall go to the payment and pay throght paypal.
+
 ----
 
 
@@ -280,11 +275,9 @@ On the top middle of the landing page, an order buttonwill take you to the order
 
 ### Django Packages
 
-* [Gunicorn](https://gunicorn.org/)- As the server for Heroku.
 * [Cloudinary](https://cloudinary.com/)- Was used to host the static files and media for the site.
 * [Dj_database_url](https://pypi.org/project/dj-database-url/)- To parse the database URL from the environment variables in Heroku.
 * [Psycopg2](https://pypi.org/project/psycopg2/)- As an adaptor for Python and PostgreSQL databases.
-* [Summernote](https://summernote.org/)- As a text editor.
 * [Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)- For authentication, registration, account management.
 * [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)- To style the forms.
 
@@ -305,10 +298,10 @@ On the top middle of the landing page, an order buttonwill take you to the order
 ## Testing
 
 ### Validation
-I used the following validation tools to validate HTML, CSS, PYTHON codes. Below the link of TESTING.md file, which includes all validation results.  
-- HTML using [W3C HTML validator](https://validator.w3.org/)
+I used the following validation tools to validate CSS. Below the link of TESTING.md file, which includes all validation results.  
+
 - CSS using [Jigsaw CSS validator](https://jigsaw.w3.org/css-validator/)
-- Python via [PEP8 CI Python Linter](https://pep8ci.herokuapp.com/)
+
 
 ### Manual Testing
 Testing has taken place continuously throughout the development of the project. Each view was tested regularly. When the outcome was not as expected, debugging took place at that point. An exhaustive list of features were checked on different devices and browsers. They were performed and their scrrenshots can be found in the features section on how the distinct features render. All clickable links redirect to the correct pages.
@@ -321,23 +314,18 @@ Testing has taken place continuously throughout the development of the project. 
 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
-| In navbar, the menu i.| Create destination_list view that return context (destination_list) then add `'blog.views.destinations_list'` in templates section in settings.py file |
-| Post image was not rendering on post_detail page(Issue only for mobile screens). | Remove class 'd-none' from post_detail page |
-| Alert messages was not disappeare after setTimeOut(2000)<br><details><summary>Alert Code</summary><img src="assets/alert-js.jpg"></details> | Copy code from bootstrap alert and customize with forEach <br><details><summary>New Alert Code</summary><img src="assets/new-alert-js.jpg"></details>|
-| Destination dropdown was again not populating. | Remove script scr 'bootstrap.min.js' because there is already 'bootstrap.bundle.min.js' |
-| Automated test was not working because of postgres database | Connect with local db.sqlite3 while running unit test<br><details><summary>Override database for unit test</summary><img src="assets/local-bd-for-unittest.jpg"></details>  |
+| In menu page, I had issue uploadind images.| I finally i manged to fixed it going through out my download files. |
+| I had issue with hovering on the striped table  | After searching on w3 school website and going through bootstrap I was able to fix the problem. |
+| I had problem seprating two card in my dashboard  | Copy code from bootstrap alert and customized it.|
+| I had small issue positioning my logo image to the bottom left of the page | I did manage to put it in right place after searching and with help of my teacher  |
 
 
 | **Unfix Bug** |
 | ----------- | 
-| When a logged in user adds a new post, the post slug should automatically be created from the post title. But the slug field is empty in the database. Slug is a required field when admin publishes a draft post, so here admin manually filled the slug field during publishing. Below is the screenshot from the post model in admin panel and view for Add Post.<br><details><summary>Empty slug screenshot</summary><img src="assets/empty-slug.jpg"></details><details><summary>Add Post View</summary><img src="assets/addPostView.jpg"></details> 
+| I have a unsolved bug in making my website responsive in all type of screen<br><summary>unfortunately i couldn't find a way to fix this.but I will try to find a solution for my future project.</summary>
 
 ----
 
-## Future Implementation
-
-* Automated testing for views functions 
-* Adding and displaying replies below corresponding comments on our blog
 
 [Back to top ⇧](#content)
 
@@ -361,18 +349,7 @@ Testing has taken place continuously throughout the development of the project. 
 * Test server works locally: `python manage.py runserver`.
 * If the app has been installed correctly the window will display- The install worked successfully! Congratulations!
 
-### 2. Create your Heroku app
-* Navigate to [Heroku](https://id.heroku.com).
-* Create a Heroku account by entering your email address and a password (or login if you have one already).
-* Activate the account through the authentication email sent to your email account.
-* Click the **new button** on the top right corner of the screen and select create a new app from the dropdown menu.
-* Enter a unique name for the application.
-* Select the appropriate region for the application.
-* Click create app.
-* Click Reveal Config Vars and add a new record with `DATABASE_URL`.
-* Click Reveal Config Vars and add a new record with `PORT`.
-* Click Reveal Config Vars and add a new record with the `DISABLE_COLLECTSTATIC = 1`(note: this must be either removed or set to 0 for final deployment).
-* Next, scroll down to the Buildpack section, click `Add Buildpack` select python and click Save Changes.
+
 
 ### 3. Set up Environment Variables
 * In you IDE create a new env.py file in the top level directory.
@@ -382,61 +359,19 @@ Testing has taken place continuously throughout the development of the project. 
 * In env.py add `os.environ["SECRET_KEY"] = "Make up your own random secret key"`.
 * In Heroku Settings tab Config Vars enter the same `SECRET_KEY` created in env.py by entering 'SECRET_KEY' in the box for 'KEY' and your randomly created secret key in the 'value' box.
 
-### 4. Setting up settings.py
-* In your Django 'settings.py' file type:
+### Functions
+* In my Django 'views.py' file:
 
- ```
- from pathlib import Path
- import os
- import dj_database_url
+![search bar](/coderscafe/cafe/assets/image/views.py.png)
 
- if os.path.isfile("env.py"):
-  import env
- ```
-* Remove the default insecure secret key in settings.py and replace with the link to the secret key variable in Heroku by typing: `SECRET_KEY = os.environ.get(SECRET_KEY)`
-* Comment out the `DATABASES` section in settings.py and replace with:
-```
-DATABASES = {
-  'default': 
-  dj_database_url.parse(os.environ.get("DATABASE_URL"))
-  }`
-```
-* Create a Cloudinary account and from the 'Dashboard' in Cloudinary copy your url into the env.py file by typing: `os.environ["CLOUDINARY_URL"] = "cloudinary://<insert-your-url>"`
-* In Heroku, click Reveal Config Vars and add a new record with the `CLOUDINARY_URL`
-* Add Cloudinary libraries to the installed apps section of settings.py file:
- ```
- 'cloudinary_storage'
- 'django.contrib.staticfiles''
- 'cloudinary'
- ```
-* Connect Cloudinary to the Django app in `settings.py`:
-```
-STATIC_URL = '/static'
-STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'STATIC')]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-MEDIA_URL = '/media/'
-DEFAULT_FILE_STORAGE =
-'cloudinary_storage.storage.MediaCloudinaryStorage'
-* Link file to the templates directory in Heroku 
-* Place under the BASE_DIR: TEMPLATES_DIR = os.path.join(BASE_DIR,
-'templates')
-```
-* Change the templates directory to TEMPLATES_DIR. Place within the TEMPLATES array: `'DIRS': [TEMPLATES_DIR]`
-* Add Heroku Hostname to ALLOWED_HOSTS: 
-```ALLOWED_HOSTS = ['<Heroku_app_name>.herokuapp.com', 'localhost']```
-* Create Procfile at the top level of the file structure and insert the following:
-    ``` web: gunicorn PROJECT_NAME.wsgi ```
+* the below code shows how to costomize the paypal button.
+ ![search bar](/coderscafe/cafe/assets/image/payment-confirmation.png)
+
+
+
 
 * Commit and push the code to the GitHub Repository.
 
-### 5. Heroku Deployment: 
-* Click Deploy tab in Heroku.
-* Select Github as the deployment method.
-* Confirm you want to connect to GitHub.
-* Search for the repository name and click the connect button to link the heroku app with the Github repository. The box will confirm that heroku is connected to the repository.
-* Scroll to the bottom of the deploy page and select the preferred deployment type.
-* Click either Enable Automatic Deploys for automatic deployment when you push updates to Github or To manually deploy click the button 'Deploy Branch'. The default 'main' option in the dropdown menu should be selected in both cases. When the app is deployed a message 'Your app was successfully deployed' will be shown. Click 'view' to see the deployed app in the browser.
 
 ### 6. Final Deployment
 In the IDE:
@@ -451,29 +386,25 @@ In the IDE:
 
 # Credits
 
-## Code
-- The basic set up of the website was done by strictly following the steps as described in Code Institue Full Stack Frameworks module - Django walkthrough project `"I Think Therefore I Blog"`.
-- Followed the project of one of my friend who is also a CI student (Roshana Vakeel): https://github.com/RoshnaVakkeel/Little_Learners_Lab_Logs/blob/main/logs/forms.py 
-- Another project link I found from Linkdin, also CI's student (Laura Mayock): https://github.com/LauraMayock/The-happy-reader
-- [The Newsbox](https://github.com/rashdogg74/newsbox86)- One of the project shared by my cohort facilitator on Slack. 
 
 ## Learning Resources
-- Code Institutes Full Stack Framework Module, mainly the 'blog' walkthrough project.
-- Youtube videos by [Codemy](https://www.youtube.com/watch?v=6-XXvUENY_8&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=5)
+- Code Institutes Full Stack Framework Module.
+- Youtube videos by [food delivery](https://www.youtube.com/playlist?list=PLPSM8rIid1a0qiCpbfujex5lZoXr2SRFC)
 - [W3CSchool](https://www.w3schools.com/django/)
 - [Django Documentation](https://docs.djangoproject.com/en/3.2/ref/models/fields/#field-types)(For different quaries while doing project. For example query about models, fields, form widgets, auth and many more)
 - Other open source to understand and solve following types of error : UnboundedLocalError, MultivalueDictKeyError,  ProgrammingError, InvalidCursorName etc.
-- Youtube videos [The Dumbfounds](https://www.youtube.com/playlist?list=PLbpAWbHbi5rMF2j5n6imm0enrSD9eQUaM) for automated testing.
+
 
 ## Content and Media
 
-Mostly images and post content are taken from the website https://www.holidify.com/ and https://www.incredible-india.org/. Some images are taken from [Pexels](https://www.pexels.com/).
+Mostly images are taken from [canva](https://www.canva.com/).
 
 ----
 
 ## Acknowledgement
 
-Special thanks to my mentor Sandeep Aggarwal, My fellow student Roshna, Tutor support and Slack community for their assistance throughout this project.
+I would like to acknowledge my Code Institute mentor, Richey Malhotra, for his guidance and encouragement on this project.
+My family for testing my work and offering positive thoughts and hot cups of tea throughout the project.
 
 [Back to top](<#content>)
    
